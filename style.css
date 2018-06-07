@@ -1,0 +1,535 @@
+/*
+Theme Name: kurm_de Family Theme
+Theme URI: https://wordpress.org/themes/twentyfifteen/
+Author: Andreas Kurm Jr
+Author URI: http://www.wp-themes.kurm.de/
+Description: Theme from the Website www.kurm.de
+Version: 0.1
+Text Domain: familyTheme
+*/
+
+@media screen {
+	
+	* {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+	
+	a:link{
+		color: #202080;
+		/*color: #2c4b20;*/
+		font-weight: bold;
+		font-size:14px;
+	}
+	
+	a:visited{
+		color: #606080;
+		font-weight: bold;
+	}
+	
+	html{
+		overflow-y: scroll;
+	}
+	
+	body{
+		font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+		font-size: 87.5%;
+		line-height: 1.5;
+		color: #000;
+		background-color: #85BFF2;
+	}
+	
+	h1 { font-size: 200%; margin-bottom:10px;}
+	h2 { font-size: 130%; margin-bottom:10px;clear:both;}
+	h3 { font-size: 100%; margin-bottom:10px;}
+	
+	p{margin:10px 0;}
+	
+	
+	
+	
+	.screen-reader-text{
+		clip: rect(1px, 1px, 1px, 1px);
+		height:1px;
+		position: absolute !important;
+	}
+	
+	div#wrapper{
+		color: #6b5a4a;
+		width: 95%;
+		min-width: 250px;
+		max-width: 960px;
+		margin-top: 12px;
+		margin-right: auto;
+		margin-bottom: 30px;
+		margin-left: auto;
+	}
+	
+	div.button{
+		padding: 3% 0;
+	}
+	
+	div.button a{
+		text-decoration: none;
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: #b8cad4;
+		border-left: 5px solid #b8cad4;
+	}
+	
+	div.button a:hover{
+		border-left: 5px solid #96514F;
+	}
+	
+	.padding{padding: 5px;}
+	
+	/* ================================================
+	
+		Kopfbereich
+		
+	================================================ */
+	
+	#header{
+		background: url("https://www.kurm.de/grafiken/dach.png") no-repeat bottom left;
+		background-size: 100%;
+		
+	}
+	
+	#header h1{margin:0px;padding:5px;}
+	
+	.kuStroke{
+		position: relative;
+		background: transparent;
+		z-index: 0;
+		margin-left: 15%;
+		font-size: 50px!important;
+		text-decoration: none;
+		color: #202080!important;
+		
+		
+	}
+	
+	.kuStroke:before{
+		content: attr(title);
+		position: absolute;
+		-webkit-text-stroke: 0.2em #fff; /* Chris Coyier's favorite color! */
+		left: 0;
+		z-index: -1;
+		
+	}
+	
+	.kuStroke::after{
+		content: attr(title);
+		position: absolute;
+		-webkit-text-stroke: 0.3em #ccc;
+		left: 0;
+ 		z-index: -2;
+		
+	}
+	
+
+	
+	.custom-logo{
+		padding: 5px 0 0 40px;
+		width:40%;
+		min-width:250px;
+		height:auto;
+	}
+
+	
+	
+	
+	/* ================================================
+	
+		Navigationsbereich
+		
+	================================================ */
+	
+	.menu{
+		list-style-type: none;
+		background-color: #fff;
+	}
+	.menu ul{margin:0;}
+	.menu li{display:inline-block;}
+	
+	.menu li a{
+		display: block;
+		padding: 10px;;
+		text-decoration: none;
+		line-height: 1;
+		
+	}
+	
+	.menu-item{
+		margin:10px;
+		border-bottom:2px solid #ccc;
+	}
+	
+	.menu-item:hover{border-bottom:2px solid #0e2b82;}
+	
+	.current-menu-item{border-bottom:2px solid #96504e;}
+	
+	.nav-links{display:flex; justify-content:space-around;width:50%;margin:0 auto;}
+	.nav-links a{min-width:50px;background:rgba(184,202,212,0.5);}
+	
+	
+
+	/* ================================================
+	
+		Inhalt
+		
+	================================================ */
+	
+	#main{
+		display:flex;
+		flex-direction:column;
+		background-color: #DCC1A1; 
+		padding:2%;
+	}
+	
+	#contentTop{
+		display:flex;
+		flex-direction:row;
+		flex-wrap: nowrap;
+		align-items:flex-start;
+	}
+	
+	
+	#startBottom{
+		display:flex;
+		flex-direction:row;
+		align-items:flex-start;
+	}
+	
+	#contentBottom{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		width:100%;
+	}
+	
+	.content{
+		background-color: #b8cad4;
+		box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+		margin:2%;
+	}
+	
+	.relative{position:relative;}
+	
+	.widget{padding:20px;}
+	.row{display:flex;flex-direction:row;}
+	.col{display:flex;flex-direction:column;}
+	.horizontal{display:flex;flex-direction:row;}
+
+	.flex-start{align-items:flex-start;}
+	.alignCenter{align-items:center;}
+	.alignBottom{align-items: flex-end;}
+	
+	
+	
+	
+	a.whiteLinkText:link{color:#fff;}
+	a.whiteLinkText:visited{color:#fff;}
+		
+	.zimmer{
+		background:#fff;
+		margin:10px;
+		padding:10px;
+		border: 5px solid #000;
+	}
+	
+	.oneThird{width:33.33%;}
+	
+	.bgWhite{background:#fff;}
+	
+	.fullWidth{width:100%;}
+	
+	.right{text-align: right;}
+	.spaceBetween{justify-content:space-between;}
+	.spaceLeft{margin-left:20px;}
+	.spaceRight{margin-right:20px;}
+	
+	.contentText{padding:2%;width:80%;margin-left:5%;}
+	.contentText img{height:auto;}
+	.text{padding: 0 2%;}
+	.textCenter{text-align: center;}
+	.contentHalf{width:50%;}
+	
+	.gallery{display:flex;flex-wrap:wrap;width:100%;margin:20px 0!important;font-size:10px;}
+	.gallery-item img{width:80%;height:auto;}
+	
+	.startFirstPost{width:70%; margin:2% auto;}
+	.startSmallPost{width: 33.3%;background:none;}
+	.contentFirstPost{width:auto;position:relative;}
+	.contentSmallPost{width: 29.3%;position:relative;}
+	
+	.startFirstPost a{display:block;position:relative;}
+	.startSmallPost a{display:block;position:relative;}
+	
+	.contentText h2{margin-bottom:10px;margin-top:30px;}
+	.contentText ul{margin-left:20px;margin-bottom:20px;}
+	
+	.wp-caption,
+	.gallery-caption {
+		
+		font-size: 13px;
+		font-size: 0.8125rem;
+		font-style: italic;
+		margin-bottom: 1.5em;
+		max-width: 100%;
+	}
+	
+	.wp-caption img[class*="wp-image-"] {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width:100%;
+		height:auto;
+	}
+	
+	/*.startFirstPost img, .contentFirstPost img, .startSmallPost img, .contentSmallPost img{width:100%;height:auto;border:5px solid #fff;}*/
+	.wp-post-image{width:100%;height:auto;}
+	
+	.postDate{display:block;padding:20px;font-size:70%;text-align: right;clear:both;border-top:1px solid #999;}
+	
+	.postMarker{
+		position:absolute;
+		padding:5px;
+		background:rgba(184,202,212,0.6);
+		font-weight: bold;
+		color:#473c31;
+	}
+	
+	.postMarkerTitle{
+		top:5px;
+		left:5px;
+	}
+	
+	.postMarkerDate{
+		bottom:5px;
+		right:5px;
+		font-size:70%;
+	}
+	
+	.contentSmallPost .postTitle{font-size:70%;}
+	
+	.postTitle{
+		padding:20px;
+	}
+	
+	.alignleft{display:block;float:left;margin-right:20px; border:5px solid #fff;}
+	.aligncenter{width:100%;}
+	.alignright {
+		display: inline;
+		float: right;
+		margin-left: 1.5em;
+	}
+	
+	
+	
+	/* ================================================
+	
+		Kommentare
+		
+	================================================ */
+	
+		
+	
+	
+	.comment-list,
+	.comment-list .children {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.comment-list .children{margin-left:100px;}
+	
+	.comment-list li{margin-top:50px;background-color: #c7dae5;}
+	
+	
+	.form-submit {
+		text-align: right;
+	}
+	
+		
+	
+	/* ================================================
+	
+		Formulare
+		
+	================================================ */
+	
+	
+	textarea{padding:10px;margin:2px 10px;max-width:100%;}
+	input {padding:10px;margin:2px 10px;max-width:100%;}
+	label {padding:10px;margin:10px;margin-bottom:0;padding-bottom:0;}
+	
+	.comment-form{max-width:320px;}
+	
+	.comment-form-comment{display:flex;flex-direction:column;}
+	.comment-form-author{display:flex;flex-direction:column;}
+	.comment-form-email{display:flex;flex-direction:column;}
+	.comment-form-url{display:flex;flex-direction:column;}
+	
+	
+	/* ================================================
+	
+		Page Number Navigations
+		
+	================================================ */
+	
+	.page-numbers{padding:5px;}
+	
+	
+	
+		
+	/* ================================================
+	
+		Styles für die Familienseite
+		
+	================================================ */
+	
+	
+	div#familie{clear: both;}
+	
+	
+	div.familie_ehe{
+		width: 100%;
+		border-bottom: 2px solid #fff;
+		padding: 3% 3% 0 3%;
+	}
+	
+	div.familie_mitglied{
+		margin-right: 2%;
+		display: inline-block;
+		vertical-align: top;
+		background-color: #b8cad4;
+	}
+	
+	div.familie_mitglied img{width:40%; height:auto;float: left;}
+	
+	div.familie_mitglied_name{margin-left: 45%;font-weight: bold;}
+	
+	div.familie_mitglied_gebdatum{margin-left: 45%;}
+	
+	div#familie ul{list-style: none;}
+	
+	div#familie ul ul{
+		margin-left: 15%;
+		border-left: 2px solid #fff;
+		list-style: none;
+	}
+		
+		
+	
+	
+	
+	/* ================================================
+	
+		Fussbereich
+		
+	================================================ */
+	
+	#footer{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		border-top: 5px solid white;
+		color: white; 
+		font-size: 70%;
+		background-color: #8F7863;
+	}
+	
+	#footer div{
+		color:#fff;
+	}
+	
+	
+	.kontaktImp{
+		display:flex;
+		flex-direction:column;
+	}
+	
+	#footerLeft{
+		flex: 1 66.66%;
+	}
+	
+	.searchform input{
+		padding:10px;
+		margin:10px;
+	}
+	
+	#tag_cloud-3{
+		border-left:1px solid #a88d74;
+		border-right:1px solid #a88d74;
+	}
+	
+	#footer div a{
+		display:inline-block;
+		text-decoration: none;
+		color:#fff;
+		padding: 10px;;
+		border-bottom:2px solid #ccc;
+		margin:10px;
+	}
+	
+	#footer div a:hover{border-bottom:2px solid #0e2b82;}
+	
+	
+
+} /*Ende Media Screen */
+
+
+@media screen and (max-width: 900px){
+	
+	#contentTop{flex-direction:column;align-items:stretch;}
+	.contentWillcome{width:auto;}
+	.startFirstPost{width:auto;}
+	#contentBottom{flex-wrap:wrap;}
+	.contentSmallPost{width: 46%;}
+	
+	#footer{
+		flex-direction:column;
+	}
+	
+	
+}
+
+
+
+@media screen and (max-width: 800px){
+	
+	#startBottom{display:none;}
+	
+	
+}
+
+@media screen and (max-width: 600px){
+	#contentBottom{flex-direction:column;}
+	.contentSmallPost{width: auto;}
+	
+	#contentWelcomeText{display:none;}
+	.contentHalf{width:100%;}
+	
+	.oneThird{width:100%;}
+	
+	.alignleft{width:50%;height:auto;}
+	.startSmallPost{width:96%;}
+	.row{flex-direction:column;}
+	
+	.alignright {
+		display: block;
+		float:none;
+	}
+	
+	h1 { font-size: 140%; margin-bottom:10px;}
+	h2 { font-size: 110%; margin-bottom:10px;clear:both;}
+	h3 { font-size: 100%; margin-bottom:10px;}
+	
+	.gallery-caption{font-size:80%;}
+}

@@ -1,0 +1,28 @@
+/* Print Styles */
+@media print {
+	
+	body { background:white; color:black; margin:0; }
+	#header{display:none;}
+	.menu{display:none;}
+	
+	.contentText{
+		margin-left: 2cm;
+		padding:0.5cm;
+		width:15cm;
+	}
+	
+	.contentText h2{
+		margin-top: 1cm;
+		margin-bottom: 0.5cm;
+	}
+	
+	.postTitle{margin-bottom: 0.5cm;padding:0.5cm;}
+		
+	.image img{height:10cm;width:auto;margin: 0.5cm;}
+	
+	.postDate{display:block;border-top:1px solid #999;padding:0.5cm;text-align: right;}
+	
+	#comments{display:none;}
+	#footer{display:none;}
+	
+}
