@@ -7,7 +7,7 @@
 						
 		if ( is_single() ) {
 			?><a href="<?php the_post_thumbnail_url('full'); ?>">
-				<?php the_post_thumbnail( 'large' );?>
+				<div class="crop"><?php the_post_thumbnail( 'large' );?></div>
 			</a><?php 
 			the_title( '<h1 class="postTitle">', '</h1>' );
 		} elseif ( is_front_page() && is_home() ) {

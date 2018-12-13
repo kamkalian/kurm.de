@@ -19,15 +19,16 @@ Text Domain: familyTheme
 	}
 	
 	a:link{
-		color: #202080;
-		/*color: #2c4b20;*/
 		font-weight: bold;
 		font-size:14px;
+		color:rgb(160, 240, 255);
+		text-decoration:none;
 	}
 	
 	a:visited{
-		color: #606080;
 		font-weight: bold;
+		color:rgb(160, 240, 255);
+		text-decoration:none;
 	}
 	
 	html{
@@ -42,9 +43,9 @@ Text Domain: familyTheme
 		background-color: #85BFF2;
 	}
 	
-	h1 { font-size: 200%; margin-bottom:10px;}
-	h2 { font-size: 130%; margin-bottom:10px;clear:both;}
-	h3 { font-size: 100%; margin-bottom:10px;}
+	h1 { font-size: 200%;}
+	h2 { font-size: 130%; clear:both;}
+	h3 { font-size: 100%; margin-bottom:10px;margin-top: 20px;}
 	
 	p{margin:10px 0;}
 	
@@ -58,7 +59,7 @@ Text Domain: familyTheme
 	}
 	
 	div#wrapper{
-		color: #6b5a4a;
+		color:hsla(29, 18%, 95%, 1);
 		width: 95%;
 		min-width: 250px;
 		max-width: 960px;
@@ -160,7 +161,7 @@ Text Domain: familyTheme
 		padding: 10px;;
 		text-decoration: none;
 		line-height: 1;
-		
+		color:#202080;	
 	}
 	
 	.menu-item{
@@ -186,7 +187,7 @@ Text Domain: familyTheme
 	#main{
 		display:flex;
 		flex-direction:column;
-		background-color: #DCC1A1; 
+		background-color:#a88d74;
 		padding:2%;
 	}
 	
@@ -212,7 +213,7 @@ Text Domain: familyTheme
 	}
 	
 	.content{
-		background-color: #b8cad4;
+		background-color:hsla(201, 25%, 40%, 1);
 		box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 		margin:2%;
 	}
@@ -252,14 +253,22 @@ Text Domain: familyTheme
 	.spaceLeft{margin-left:20px;}
 	.spaceRight{margin-right:20px;}
 	
-	.contentText{padding:2%;width:80%;margin-left:5%;}
+	.contentText{padding:4%;}
 	.contentText img{height:auto;}
 	.text{padding: 0 2%;}
 	.textCenter{text-align: center;}
 	.contentHalf{width:50%;}
 	
-	.gallery{display:flex;flex-wrap:wrap;width:100%;margin:20px 0!important;font-size:10px;}
-	.gallery-item img{width:80%;height:auto;}
+	.contentText a, h2 a, .postDate a{
+		background-color:hsla(201, 25%, 30%, 1);
+		padding:2px 0.5em;
+		display: inline-block;
+	}
+	
+	
+	
+	/*.gallery{display:flex;flex-wrap:wrap;width:100%;margin:20px 0!important;font-size:10px;}*/
+	/*.gallery-item img{width:80%;height:auto;}*/
 	
 	.startFirstPost{width:70%; margin:2% auto;}
 	.startSmallPost{width: 33.3%;background:none;}
@@ -298,9 +307,9 @@ Text Domain: familyTheme
 	.postMarker{
 		position:absolute;
 		padding:5px;
-		background:rgba(184,202,212,0.6);
 		font-weight: bold;
-		color:#473c31;
+		color:hsla(29, 18%, 95%, 1);
+		background-color:hsla(201, 25%, 40%, 0.8);	
 	}
 	
 	.postMarkerTitle{
@@ -317,17 +326,65 @@ Text Domain: familyTheme
 	.contentSmallPost .postTitle{font-size:70%;}
 	
 	.postTitle{
-		padding:20px;
+		padding:4%;
 	}
 	
-	.alignleft{display:block;float:left;margin-right:20px; border:5px solid #fff;}
+	.contentSmallPost .postTitle{padding: 0;}
+	
+	/*
+	.alignleft{display:block;float:left;margin-right:20px;}
 	.aligncenter{width:100%;}
 	.alignright {
 		display: inline;
 		float: right;
 		margin-left: 1.5em;
+	}*/
+	
+	.wp-caption-text{
+		padding:5px;
 	}
 	
+	
+	
+	/* ================================================
+	
+		Images
+		
+	================================================ */
+	
+	
+	
+	img.alignright {float:right; margin:0 0 1em 1em}
+	img.alignleft {float:left; margin:0 1em 1em 0}
+	img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+	a img.alignright {float:right; margin:0 0 1em 1em}
+	a img.alignleft {float:left; margin:0 1em 1em 0}
+	a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+	
+	a.image{padding:0!important;}
+	
+	.wp-block-separator{
+		border: 1px solid hsla(201, 25%, 30%, 1);
+		margin: 30px 0;
+	}
+	
+	.wp-block-gallery{margin:0!important;}
+	.wp-block-gallery a{padding: 0;}
+	
+	.crop .size-large.wp-post-image{
+		margin-top: -20%!important;
+		margin-bottom: -20%!important;
+	}
+	
+	.crop{
+		overflow: hidden;
+	}
+
+	iframe{width:100%;}
+	
+	a img:parent{
+		padding:0!important; 
+	}
 	
 	
 	/* ================================================
@@ -407,7 +464,7 @@ Text Domain: familyTheme
 		margin-right: 2%;
 		display: inline-block;
 		vertical-align: top;
-		background-color: #b8cad4;
+		background-color:hsla(201, 25%, 40%, 1);
 	}
 	
 	div.familie_mitglied img{width:40%; height:auto;float: left;}
